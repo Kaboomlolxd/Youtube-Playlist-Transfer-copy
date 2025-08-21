@@ -144,7 +144,7 @@ def main():
             successful_additions += 1
             save_last_video_id(video_id) # Save progress after each successful addition
             # Add a small delay to avoid hitting rate limits too quickly.
-            time.sleep(0.5)
+            time.sleep(0.1)
         else:
             print(f"Stopping transfer due to API error.")
             break
